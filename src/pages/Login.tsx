@@ -9,7 +9,7 @@ export default function Login() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate('/');
+    navigate('/dashboard');
   };
 
   return (
@@ -95,7 +95,7 @@ export default function Login() {
             <div className="grid grid-cols-2 gap-3">
               <button
                 type="button"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/dashboard')}
                 className="flex h-10 items-center justify-center gap-2 rounded-lg border border-surface-200 bg-white text-sm font-medium text-surface-700 transition-colors hover:bg-surface-50"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ export default function Login() {
               </button>
               <button
                 type="button"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/dashboard')}
                 className="flex h-10 items-center justify-center gap-2 rounded-lg border border-surface-200 bg-white text-sm font-medium text-surface-700 transition-colors hover:bg-surface-50"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">

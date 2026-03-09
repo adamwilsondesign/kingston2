@@ -20,7 +20,7 @@ export default function BillDetails() {
     <div className="animate-fade-in-up mx-auto max-w-3xl p-6 lg:p-8">
       {/* Breadcrumb / back */}
       <button
-        onClick={() => navigate('/')}
+        onClick={() => navigate('/dashboard')}
         className="mb-6 flex items-center gap-1.5 text-sm text-surface-500 transition-colors hover:text-surface-700"
       >
         <ArrowLeft className="h-4 w-4" />

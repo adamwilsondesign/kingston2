@@ -12,7 +12,7 @@ import {
 import { resident } from '../data/demo';
 
 const navItems = [
-  { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/services', icon: Layers, label: 'Services', disabled: true },
   { to: '/payments', icon: CreditCard, label: 'My Payments', disabled: true },
   { to: '/history', icon: Clock, label: 'History' },
@@ -85,7 +85,7 @@ export default function Shell() {
                 ) : (
                   <NavLink
                     to={item.to}
-                    end={item.to === '/'}
+                    end={item.to === '/dashboard'}
                     className={({ isActive }) =>
                       `flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                         isActive

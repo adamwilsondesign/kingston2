@@ -27,13 +27,13 @@ export default function App() {
     <AppContext value={{ state, payBill, reset }}>
       <BrowserRouter>
         <Routes>
-          {/* Login — outside shell */}
-          <Route path="login" element={<Login />} />
+          {/* Login — landing page, outside shell */}
+          <Route index element={<Login />} />
           {/* Checkout — Shopify-style full page, no portal shell */}
           <Route path="checkout" element={<Checkout />} />
           {/* Portal shell routes */}
           <Route element={<Shell />}>
-            <Route index element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="bill/utility" element={<BillDetails />} />
             <Route path="processing" element={<Processing />} />
             <Route path="confirmation" element={<Confirmation />} />

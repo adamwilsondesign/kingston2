@@ -119,7 +119,7 @@ export default function Confirmation() {
         </div>
         <div className="flex gap-3">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/dashboard')}
             className="flex h-11 flex-1 items-center justify-center rounded-lg border border-surface-200 bg-white text-sm font-medium text-surface-700 transition-colors hover:bg-surface-50"
           >
             Return to Dashboard
